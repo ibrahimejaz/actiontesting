@@ -4,7 +4,7 @@ on: [push]
 jobs:
   custom_test:
     runs-on: ubuntu-latest
-    name: deployment
+    name: deployment-production
     steps:
       - name: Get Pokemon name
         uses: ibrahimejaz/actiontesting@main
