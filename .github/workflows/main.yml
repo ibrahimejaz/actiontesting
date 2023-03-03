@@ -13,3 +13,14 @@ jobs:
           pokemon_id: 150
       - name: Get the pokemon
         run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
+
+# new deployment
+ 
+     name: deployment-staging
+      - name: Get Pokemon name
+        uses: ibrahimejaz/actiontesting@main
+        id: pokemon1
+        with:
+          pokemon_id: 150
+      - name: Get the pokemon
+        run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
